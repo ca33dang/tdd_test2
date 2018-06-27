@@ -1,7 +1,7 @@
 def number_comparison(my_ticket, winning_ticket)
-	my_ticket = my_ticket.split('')
+	my_ticket = my_ticket.split("")
 	puts "my ticket is #{my_ticket}"
-	winning_ticket = winning_ticket.split('')
+	winning_ticket = winning_ticket.split("")
 	puts "winning ticket is #{winning_ticket}"
 	matching_number = 0
 	winning_ticket.each_with_index do |num,index|
@@ -32,7 +32,7 @@ end
 	def winarr(myticketarray, winningticket)
 		warr = []
 		winningticket.each do |num|
-			matches = check_for_match_arr_2(myticketarray, num)
+			matches = check_for_match_arr(myticketarray, num)
 			winners = 0
 			matches.each do |m|
 				if m == 0
